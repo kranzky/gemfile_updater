@@ -14,9 +14,25 @@ Gem::Specification.new do |s|
   s.date = "2015-06-27"
   s.description = "Does what it says on the tin."
   s.email = "jasonhutchens@gmail.com"
+  s.executables = ["gemfile_updater"]
   s.extra_rdoc_files = [
     "CHANGELOG.md",
     "README.md"
+  ]
+  s.files = [
+    ".ruby-gemset",
+    ".ruby-version",
+    "CHANGELOG.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md",
+    "Rakefile",
+    "UNLICENSE",
+    "VERSION",
+    "bin/gemfile_updater",
+    "gemfile_updater.gemspec",
+    "lib/gemfile_updater.rb",
+    "lib/gemfile_updater/main.rb"
   ]
   s.homepage = "http://github.com/JasonHutchens/gemfile_updater"
   s.licenses = ["UNLICENSE"]
