@@ -11,8 +11,8 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
+require 'juwelier'
+Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "gemfile_updater"
   gem.homepage = "http://github.com/JasonHutchens/gemfile_updater"
@@ -24,7 +24,7 @@ Jeweler::Tasks.new do |gem|
   gem.required_ruby_version = "~> 2.2"
   # dependencies defined in Gemfile
 end
-Jeweler::RubygemsDotOrgTasks.new
+Juwelier::RubygemsDotOrgTasks.new
 
 task :default => :clean
 

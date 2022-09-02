@@ -16,7 +16,7 @@ blob = File.read('Gemfile')
 
 gems.each do |name, version|
   next unless versions[name]
-  blob.gsub!(/gem +['"]#{name}['"], *['"][^0-9]*#{version}['"]/, "gem '#{name}', '~> #{versions[name]}'")
+  blob.gsub!(/gem +['"]#{name}['"], *['"][^0-9]*#{version}['"]/, "gem \"#{name}\", \"~> #{versions[name]}\"")
 end
 
 File.open("Gemfile", "w") { |file| file.write(blob) }
