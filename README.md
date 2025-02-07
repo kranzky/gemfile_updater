@@ -9,4 +9,4 @@ Updates your Gemfile with pessimistic versions of the gems in Gemfile.lock.
 Copyright
 ---------
 
-Copyright (c) 2015 Jason Hutchens. See UNLICENSE for further details.
+Copyright (c) 2015-2025 Jason Hutchens. See UNLICENSE for further details.
