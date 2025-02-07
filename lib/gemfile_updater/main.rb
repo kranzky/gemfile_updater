@@ -1,6 +1,7 @@
 gems = {}
 File.read('Gemfile').each_line do |line|
   line.strip!
+  next unless line =~ /~>/ # only update pessimistic dependencies
   next unless match = /^gem +['"]([^'"]*)['"], *['"][^0-9]*([^'"]*)['"]/.match(line)
   gems[match[1]] = match[2]
 end
